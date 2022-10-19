@@ -1,0 +1,21 @@
+azureSettings:
+  connectionString: "YOUR_IOT_HUB_CONNECTION_STRING"
+  authentications:
+  - name: "auth1"
+    sharedAccessKey: "YOUR_SHARED_ACCESS_KEY"
+    deviceId: "device1"
+    description: "HOGE"
+  - name: "auth2"
+    sharedAccessKey: "YOUR_SHARED_ACCESS_KEY"
+    deviceId: "device2"
+    description: "FUGA"
+  devices:
+    - imsi: "999990000000001"
+      deviceId: device1
+      options:
+        - name: type
+          value: SAS
+        - name: primary_key
+          value: "YOUR_PRIMARY_KEY_FOR_DEVICE"
+        - name: secondary_key
+          value: "YOUR_SECONDARY_KEY_FOR_DEVICE"

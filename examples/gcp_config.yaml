@@ -1,0 +1,31 @@
+gcpSettings:
+  serviceAccount: "YOUR_SERVICE_ACCOUNT_FILE_PATH"
+  projectId: "YOUR_GCP_PROJECT_ID"
+  region: "YOUR_IOT_CORE_REGISTRY_REGION"
+  registryId: "YOUR_IOT_CORE_REGISTRY_ID"
+  authentications:
+  - name: "auth1"
+    algorithm: "ES256"
+    privateKey: "YOUR_PRIVATE_KEY_FILE_PATH_FOR_DEVICE"
+    deviceId: "device1"
+    description: "example1"
+  - name: "auth2"
+    algorithm: "RS256"
+    privateKey: "YOUR_PRIVATE_KEY_FILE_PATH_FOR_DEVICE"
+    deviceId: "device2"
+    description: "example2"
+  devices:
+  - imsi: 999990000000001
+    deviceId: device1
+    options:
+      - name: format
+        value: ES256_PEM
+      - name: public_key
+        value: "YOUR_PUBLIC_KEY_FILE_PATH_FOR_DEVICE"
+  - imsi: 999990000000002
+    deviceId: device2
+    options:
+      - name: format
+        value: ES256_PEM
+      - name: public_key
+        value: "YOUR_PUBLIC_KEY_FILE_PATH_FOR_DEVICE"
