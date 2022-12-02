@@ -1,3 +1,8 @@
+## Copyright (c) 2022 NTT Communications Corporation
+##
+## This software is released under the MIT License.
+## see https://github.com/nttcom/icgw-tools/blob/main/LICENSE
+
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv

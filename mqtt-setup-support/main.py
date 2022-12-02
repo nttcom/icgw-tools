@@ -1,7 +1,7 @@
 ## Copyright (c) 2022 NTT Communications Corporation
 ##
 ## This software is released under the MIT License.
-## see https://github.com/nttcom/icgw-mqtt-support-tool/blob/main/LICENSE
+## see https://github.com/nttcom/icgw-tools/blob/main/LICENSE
 
 from argparse import ArgumentParser
 from services.main_service import MainService
